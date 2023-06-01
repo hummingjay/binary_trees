@@ -40,9 +40,37 @@ typedef struct binary_tree_s binary_tree_t;
 
 ### Binary Search Tree
 
-` typedef struct binary_tree_s bst_t; `
+```
+ typedef struct binary_tree_s bst_t;
+```
 
 ### AVL
+
 ```
 typedef struct binary_tree_s avl_t;
 ```
+
+### Max Binary Heap
+
+```
+typedef struct binary_tree_s heap_t;
+```
+
+### Print function
+
+To match the examples in the tasks, you are given [this function](https://github.com/holbertonschool/0x1C.c)
+
+This function is used only for visualization purposes. You don’t have to push it to your repo. It may not be used during the correction
+
+## Tasks
+
+### 0. [New node](0-binary_tree_node.c)
+Write a function that creates a binary tree node
+
+  * Prototype: binary\_tree\_t \*binary\_tree\_node(binary\_tree\_t \*parent, int value);
+  * Where parent is a pointer to the parent node of the node to create
+  * And value is the value to put in the new node
+  * When created, a node does not have any child
+  * Your function must return a pointer to the new node, or NULL on failure </br>
+
+File: [0-binary\_tree\_node.c](0-binary_tree_node.c)
